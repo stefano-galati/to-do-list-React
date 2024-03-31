@@ -1,4 +1,4 @@
-
+import "./Textbox.css"
 
 export default function Textbox(props){
     const {text, setText, items, setItems, maxID, setMaxID} = props

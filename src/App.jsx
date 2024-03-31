@@ -1,5 +1,6 @@
 import Container from './Components/Container/Container';
 import Textbox from './Components/Textbox/Textbox';
+import ClearItems from './Components/ClearItems/ClearItems';
 import { useState } from 'react';
 import './App.css';
 
@@ -14,8 +15,10 @@ function App() {
 	return(
 		<main>
 			<h1>To Do List</h1>
-			<Textbox text={text} setText={setText} items={items} setItems={setItems} maxID={maxID} setMaxID={setMaxID}></Textbox>
+			<Textbox text={text} setText={setText} items={items} setItems={setItems} maxID={maxID} setMaxID={setMaxID} />
 			<Container items={items} setItems={setItems} maxID={maxID} setMaxID={setMaxID} />
+			<ClearItems setItems={setItems} />
+
 			{showItems}
 		</main>
 	)

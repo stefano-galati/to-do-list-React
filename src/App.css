@@ -4,3 +4,19 @@ main{
     width: fit-content;
     padding: 20px 100px 20px 100px;
 }
+
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: #AAAAAA;
+    border: 2px solid black;
+    padding: 5px;
+    min-width: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+button:hover{
+    background-color: #666666;
+}
