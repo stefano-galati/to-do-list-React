@@ -1,6 +1,6 @@
 main{
     border: 2px solid black;
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
     width: fit-content;
     padding: 20px 100px 20px 100px;
 }
@@ -19,4 +19,10 @@ button{
 }
 button:hover{
     background-color: #666666;
+}
+button:active{
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow: 0 0;
 }

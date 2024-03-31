@@ -1,5 +1,6 @@
 .container{
-    border: 2px solid black;
+    margin: 30px auto 30px auto;
+    /*border: 2px solid black;*/
     display: flex;
     flex-direction: column;
     justify-content: center;

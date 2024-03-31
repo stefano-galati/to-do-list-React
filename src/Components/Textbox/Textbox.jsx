@@ -9,10 +9,12 @@ export default function Textbox(props){
     }
 
     const handleAction = () => {
-        setItems(items => [...items, {name: text, id: maxID+1}])
-        setMaxID(n => n+1)
-        setText(text => "")
-        console.log(items, maxID, text)
+        if(text!=="" && items.find((element) => element.name === text) === undefined){
+            setItems(items => [...items, {name: text, id: maxID+1}])
+            setMaxID(n => n+1)
+            setText(text => "")
+            console.log(items, maxID, text) 
+        }
     }
 
     return(<div>
