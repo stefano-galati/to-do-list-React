@@ -3,16 +3,12 @@ import "./Container.css"
 
 export default function Container(props){
 
-	const items = props.items
-	const setItems = props.setItems
-	const maxID = props.maxID
-	const setMaxID = props.setMaxID
+	const {items, setItems, maxID, setMaxID, setText, isChanging, setIsChanging} = props
 
 	//console.log(items)
 	const container = items.map((elem) => <Item name={elem.name} setItems={setItems}
-	id={elem.id} maxID={maxID} setMaxID={setMaxID}></Item>)
+	checked={elem.checked} id={elem.id} setText={setText} isChanging={isChanging}
+	setIsChanging={setIsChanging}></Item>)
 
-	
-	
 	return(<div className='container'>{container}</div>)
 }
