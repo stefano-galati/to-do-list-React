@@ -22,7 +22,7 @@ function App() {
 			isChanging={isChanging} setIsChanging={setIsChanging}/>
 			<ClearItems setItems={setItems} />
 
-			{showItems}
+			{/*showItems*/}
 		</main>
 	)
 }

@@ -1,12 +1,23 @@
+/*
+*{
+    border: 2px solid black;
+}
+*/
+body{
+    background-color: #aaaaaa;
+}
+
 main{
+    background-color: #eeeeee;
     border: 2px solid black;
     margin: 100px auto 100px auto;
-    width: fit-content;
-    padding: 20px 100px 20px 100px;
+    width: 30%;
+    padding: 40px 100px 40px 100px;
 }
 
 h1{
     text-align: center;
+    margin-top: 0;
 }
 
 button{
@@ -19,6 +30,7 @@ button{
 }
 button:hover{
     background-color: #666666;
+    cursor: pointer;
 }
 button:active{
     position: relative;

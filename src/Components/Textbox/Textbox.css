@@ -1,11 +1,20 @@
 input[type="textbox"]{
+    width: 70%;
     border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 2px 2px black;;
+    box-shadow: 2px 2px black;
+    outline: none;
+}
+input[type="textbox"]:focus{
+    border-color: #777777;
+    box-shadow: 2px 2px #777777;
+    padding-left: 5px;
 }
 
 #textboxContainer{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 10px;
+    margin-top: 30px;
 }
