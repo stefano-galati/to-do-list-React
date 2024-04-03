@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
 
-	const [items, setItems] = useState([{name: "Giorgio", id: 1, checked:false}])
+	const [items, setItems] = useState([])
 	const [maxID, setMaxID] = useState(1)
 	const [text, setText] = useState("")
 	const [isChanging, setIsChanging] = useState(false)
